@@ -8,4 +8,4 @@ After cleaning and getting our data set ready for machine learning, we build mod
 
 We compare performances of k-nearest neighbors, random forest, ridge classifier and support vector classifier algorithms on our data set using time series cross validation.
 
-Our final model can predict the wins in the last season using previous five seasons with an average area under ROC value of 0.894, and an f1-score of 0.752.
+Our final model can predict the wins in the last season using previous five seasons with an area under ROC value of 0.894, and an f1-score of 0.752.
