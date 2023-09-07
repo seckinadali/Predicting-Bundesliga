@@ -6,4 +6,4 @@ We first scrape data from [http://fbref.com](http://fbref.com) using Requests, B
 
 After cleaning and getting our data set ready for machine learning, we build models predicting who will win a match using Scikit-Learn. 
 
-We compare performances of k-nearest neighbors, random forest, ridge classifier and support vector classifier algorithms on our data set using time series cross validation.
+We compare performances of random forest, ridge and support vector classifiers on our data set using time series cross validation.
