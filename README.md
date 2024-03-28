@@ -1,9 +1,13 @@
 # Predicting Bundesliga Match Results
 
-In this project, our aim is to build a machine learning model to predict match results in Bundesliga, Germany's primary football league.
+In this project, our objective is to build a machine learning model to predict match results in Bundesliga, Germany's primary football league.
 
-We first scrape data from [http://fbref.com](http://fbref.com) using Requests, BeautifulSoup and Pandas, and create a csv file containing match logs over six seasons.
+We begin by gathering data from [http://fbref.com](http://fbref.com) utilizing the Requests library for web scraping, BeautifulSoup for parsing HTML, and Pandas for data manipulation. This data is then stored in a CSV file containing match logs spanning six seasons.
 
-After cleaning and getting our data set ready for machine learning, we build models predicting who will win a match using Scikit-Learn. 
+Subsequently, we clean and preprocess our dataset to ensure it is ready for machine learning analysis. Using the Scikit-Learn and XGBoost libraries, we construct predictive models aimed at determining match winners.
 
-We compare performances of random forest, ridge and support vector classifiers on our data set using time series cross validation.
+We employ a range of classifiers, including random forest, ridge, support vector machines, and xgboost classifiers, and evaluate their performance using time series cross-validation.
+
+Furthermore, we investigate how including rolling averages of recent match performance metrics impacts model performance.
+
+Throughout the project, we perform grid search using the F1 score as the main metric to optimize our models. Additionally, we note the accuracy and ROC AUC scores for each model, and plot ROC curves, allowing us to visually compare their fits.
