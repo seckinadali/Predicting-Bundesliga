@@ -8,6 +8,6 @@ Subsequently, we clean and preprocess our dataset to ensure it is ready for mach
 
 We employ a range of classifiers, including random forest, ridge, support vector machines, and xgboost classifiers, and evaluate their performance using time series cross-validation.
 
-Furthermore, we investigate how including rolling averages of recent match performance metrics impacts model performance.
+Furthermore, we investigate how including rolling averages of recent match performance metrics and the number of days since the team's last match impacts model performance.
 
 Throughout the project, we perform grid search using the F1 score as the main metric to optimize our models. Additionally, we note the accuracy and ROC AUC scores for each model, and plot ROC curves, allowing us to visually compare their fits.
